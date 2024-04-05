@@ -1,0 +1,15 @@
+[profile.default]
+src = "contracts"
+out = "artifacts"
+libs = ["lib"]
+solc = '0.8.24'
+via_ir = true
+optimizer = true
+optimizer_runs = 1_000
+
+remappings = [
+  "forge-std=lib/forge-std/src/",
+  "multicaller=node_modules/@pulsechain/multicaller/src/",
+  "contracts=contracts",
+  "@pulsechain/multicaller/src/=node_modules/@pulsechain/multicaller/src/",
+]
